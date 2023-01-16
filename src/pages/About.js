@@ -16,18 +16,18 @@ const About = () => {
                 {/* text & img wrapper */}
                 <div className='flex flex-col lg:flex-row h-full items-center justify-center gap-x-24 text-center lg:text-left lg:pt-16'>
                     {/* Image */}
-                    <div className='flex-1 max-h-96 lg:max-h-max order-2 lg:order-none overflow-hidden'>
+                    <div className='flex-1 lg:mt-48 max-h-96 lg:max-h-max order-2 lg:order-none'>
                         <img src={WomanImg} alt='' />
                     </div>
                     {/* Text */}
-                    <div className='flex-1 pt-36 pb-14 lg:pt-0 lg:w-auto z-10 flex flex-col justify-center items-center lg:items-start'>
-                        <h1 className='h1'>
+                    <div className='flex-1 mt-48 pt-48 pb-14 lg:pt-0 lg:w-auto z-10 flex flex-col justify-center items-center lg:items-start'>
+                        <h1 className='h1 mt-16 lg:mt-0'>
                             About Me
                         </h1>
                         <p className='mb-12 max-w-sm'>
-                            Lorem ipsum dolor sit amet consectetur, adipiscing elit. <b>Exercitationem, veritatis. </b> Veritatis illum aut, reprehenderit sed dolorem dolore.<br /> <br />Lorem ipsum, dolor sit amet consectetur adipiscing elit. Recusandae, iure! Ullam, dolore? Eligendi, quam mollitia.
+                            My name is Muhammad Nifa Fadhil, a freelance <b>photographer</b> and also <b>videographer.</b> I have been working professionally in this field since 2019.<br /> <br />I live in Purworejo while also working freelance in and out the city
                         </p>
-                        <Link to={'/portfolio'} className='btn'>View my Work</Link>
+                        <Link to={'/photograph/portfolio'} className='btn'>View my Work</Link>
                     </div>
                 </div>
             </div>

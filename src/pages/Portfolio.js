@@ -4,23 +4,26 @@ import Image2 from '../img/portfolio/2.png'
 import Image3 from '../img/portfolio/3.png'
 import Image4 from '../img/portfolio/4.png'
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
+import { transition1 } from '../transitions';
+
 
 const Portfolio = () => {
     return (
-        <section className='section'>
+        <motion.section initial={{ opacity: 0, y: '100%' }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: '100%' }} transition={transition1} className='section'>
             <div className='container mx-auto h-full relative'>
                 {/* Text & Img wrapper */}
                 <div className='flex flex-col lg:flex-row h-full items-center justify-start gap-x-24 text-center lg:text-left pt-24 lg:pt-36 pb-8'>
                     {/* Text */}
-                    <div className='flex flex-col lg:items-start '>
+                    <motion.div initial={{ opacity: 0, y: '-80%' }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: '-80%' }} transition={transition1} className='flex flex-col lg:items-start '>
                         <h1 className='h1'>
                             Portfolio
                         </h1>
                         <p className='mb-12 max-w-sm'>
-                            Lorem ipsum dolor sit amet consectetur, adipiscing elit. <b>Exercitationem, veritatis. </b> Veritatis illum aut, reprehenderit sed dolorem dolore.<br /> <br />Lorem ipsum, dolor sit amet consectetur adipiscing elit. Recusandae, iure! Ullam, dolore? Eligendi, quam mollitia.
+                            These are some of my works that I have been done. I usually take a job in a wedding photograph. However, I am open to any other kind of photographer job.<br /> <br />You can see other portfolios by visiting my instagram profile from the link below.
                         </p>
-                        <Link to={'/contact'} className='btn mb-[30px] mx-auto lg:mx-0'>hire me</Link>
-                    </div>
+                        <Link to={'/photograph/contact'} className='btn mb-[30px] mx-auto lg:mx-0 '>hire me</Link>
+                    </motion.div>
                     {/* Img grid*/}
                     <div className='grid grid-cols-2 lg:gap-2'>
                         {/* Image */}
@@ -39,7 +42,7 @@ const Portfolio = () => {
                     </div>
                 </div>
             </div>
-        </section>
+        </motion.section>
     )
 }
 
