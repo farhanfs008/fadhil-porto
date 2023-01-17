@@ -27,7 +27,7 @@ const About = () => {
                         <p className='mb-12 max-w-sm'>
                             My name is Muhammad Nifa Fadhil, a freelance <b>photographer</b> and also <b>videographer.</b> I have been working professionally in this field since 2019.<br /> <br />I live in Purworejo while also working freelance in and out the city
                         </p>
-                        <Link to={'/photograph/portfolio'} className='btn'>View my Work</Link>
+                        <Link to={'/portfolio'} className='btn'>View my Work</Link>
                     </div>
                 </div>
             </div>

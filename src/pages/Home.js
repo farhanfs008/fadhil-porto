@@ -15,7 +15,7 @@ const Home = () => {
                         <h3 className='h2'>Akana Studio</h3>
                         <h1 className='h1'>Photographer <br/>& Filmmaker</h1>
                         <p className='text-[26px] lg:text-[36px] font-primary mb-4 lg:mb-12'>Purworejo, Central Java</p>
-                        <Link to={'/photograph/contact'} className='btn mb-[30px]'>Hire Me</Link>
+                        <Link to={'/contact'} className='btn mb-[30px]'>Hire Me</Link>
                     </motion.div>
                     {/* Img */}
                     <div className='flex justify-end max-h-96 lg:max-h-max'>

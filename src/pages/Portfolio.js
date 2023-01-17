@@ -22,7 +22,7 @@ const Portfolio = () => {
                         <p className='mb-12 max-w-sm'>
                             These are some of my works that I have been done. I usually take a job in a wedding photograph. However, I am open to any other kind of photographer job.<br /> <br />You can see other portfolios by visiting my instagram profile from the link below.
                         </p>
-                        <Link to={'/photograph/contact'} className='btn mb-[30px] mx-auto lg:mx-0 '>hire me</Link>
+                        <Link to={'/contact'} className='btn mb-[30px] mx-auto lg:mx-0 '>hire me</Link>
                     </motion.div>
                     {/* Img grid*/}
                     <div className='grid grid-cols-2 lg:gap-2'>
