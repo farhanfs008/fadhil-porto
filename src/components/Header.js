@@ -13,10 +13,10 @@ const Header = () => {
                 </Link>
                 {/* Nav - inititally hidden - show on desktop mode */}
                 <nav className='hidden xl:flex gap-x-12 font-semibold'>
-                    <Link to='/photograph' className='text-[#696c6d] hover:text-primary transition'>Home</Link>
-                    <Link to='/photograph/about' className='text-[#696c6d] hover:text-primary transition'>About</Link>
-                    <Link to='/photograph/portfolio' className='text-[#696c6d] hover:text-primary transition'>Portfolio</Link>
-                    <Link to='/photograph/contact' className='text-[#696c6d] hover:text-primary transition'>Contact</Link>
+                    <Link to='/' className='text-[#696c6d] hover:text-primary transition'>Home</Link>
+                    <Link to='/about' className='text-[#696c6d] hover:text-primary transition'>About</Link>
+                    <Link to='/portfolio' className='text-[#696c6d] hover:text-primary transition'>Portfolio</Link>
+                    <Link to='/contact' className='text-[#696c6d] hover:text-primary transition'>Contact</Link>
                 </nav>
             </div>
             {/* Socials */}
